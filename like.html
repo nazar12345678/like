@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Like</title>
+</head>
+<body>
+<img src="serdce1.png" id="1" width="50" onclick="click1()"></img>
+<h1 id="2"></h1>
+</body>
+<script>
+    var like=0
+    function click1() {
+        like=like+1
+        if(like>1)
+            like=0
+        if(like == 0){
+            document.getElementById('1').src = 'serdce1.png'
+        }if(like == 1){
+            document.getElementById('1').src = 'serdce2.png'
+        }
+        document.getElementById('2').innerHTML = like
+
+    }
+</script>
+</html>
